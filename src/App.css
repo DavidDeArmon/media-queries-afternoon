@@ -1,0 +1,143 @@
+#landing{
+  width: 100vw;
+}
+.App{
+  display: flex;
+  background-image: url('https://blog.easecentral.com/wp-content/uploads/2017/03/organize-unsplash.jpg');
+  background-size:cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+.App-darken{
+  display: flex;
+  background-color:rgba(0,0,0,0.5);
+}
+.landing{
+  display: flex;
+  flex-direction: column;
+  height:80vh;
+}
+.logo{
+  width: 25vw;
+  font-size: 30px;
+  font-family:'permanent marker', 'cursive';
+  margin-left:18vw;
+  color:gold;
+}
+header{
+  color:white;
+  display:flex;
+  padding-top:3vh;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.Links{
+font-family: 'K2D', sans-serif;
+  display: flex;
+  width:25vw;
+  justify-content: space-between;
+  margin-right:20vw;
+}
+#menu{
+font-family: 'K2D', sans-serif;
+  display: none;
+  background:none;
+  background-color: gold;
+  height: 40px;
+  box-shadow: none;
+  border:none;
+  color:white;
+  border-radius: 10px;
+  margin-right: 10vw;
+}
+
+.middle-content{
+  color:white;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding-top:10%;
+}
+#welcome{
+  font-family: 'Merriweather', serif;
+  font-style:italic;
+  font-size: 3vw;
+  margin:0px;
+}
+#nice{
+font-family: 'K2D', sans-serif;
+  display: table-cell;
+  font-size:5vw;
+  margin:20px;
+  width: 70vw;
+  text-align: middle;
+  align-content: center;
+  justify-content: center;
+}
+#landingbutton{
+  font-family: 'K2D', sans-serif;
+  width:12vw;
+  height: 7vh;
+  background: none;
+  background-color: gold;
+  color:white;
+  font-size:1vw;
+  margin:0 auto;
+  border:none;
+  border-radius: 20px;
+  box-shadow: 0;
+}
+@media(min-width:1050px) and (max-width:1400px){
+  .logo{
+    margin-left:8vw;
+  }
+  .Links{
+    width:30vw;
+    margin-right:8vw;
+  }
+  #landingbutton{
+    font-size:2vw;
+    width:40vw;
+  }
+}
+@media(max-width:1049px){
+  .logo{
+    margin-left:4vw;
+    width:250px;
+  }
+  .Links{
+    display: none;
+  }
+  #menu{
+    display: block;
+  }
+  #landingbutton{
+    font-size:3vw;
+    width:30vw;
+    height:8vh;
+  }
+  #nice{
+    font-size:8vw;
+    margin:10px;
+  }
+  #welcome{
+    font-size:5vw;
+  }
+  .middle-content{
+    padding-top:20%;
+  }
+}
+@media(max-width:580px){
+   #landingbutton{
+    font-size:6vw;
+    width:60vw;
+    height:10vh;
+  }
+}
